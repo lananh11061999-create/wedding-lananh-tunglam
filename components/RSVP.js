@@ -23,8 +23,10 @@ export default function RSVP(){
             style={{width:'100%', height:520, border:'1px dashed #ccc'}}
           />
           <p style={{fontSize:13, color:'#7a6060', marginTop:8}}>
-            Thay đường dẫn src trong iframe bằng mã embed Google Form của bạn (từ Google Forms -> Send -> &lt;&gt; Embed).
-          </p>
+  Thay đường dẫn <code>src</code> trong iframe bằng mã embed Google Form của bạn 
+  (từ Google Forms → Send → {'<>'} Embed).
+         </p>
+
         </div>
       </div>
     </section>
