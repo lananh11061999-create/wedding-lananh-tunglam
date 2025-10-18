@@ -2,13 +2,13 @@ export default function RSVP(){
   return (
     <section className="section rsvp" data-aos="fade-up">
       <div className="container" style={{maxWidth:700, margin:'0 auto', textAlign:'center'}}>
-        <h2 style={{color:'var(--main-1)'}}>Xác nhận tham dự (RSVP)</h2>
+        <h2 style={{color:'var(--main-1)'}}>Xác nhận tham dự</h2>
 
         {/* -- Simple working form (posts to getform.io - replace endpoint with your own) -- */}
         <form action="https://getform.io/f/your-form-endpoint" method="POST" style={{marginTop:18, marginBottom:24}}>
           <input name="name" placeholder="Tên bạn" required />
           <input name="guests" placeholder="Số khách" required />
-          <textarea name="note" rows="4" placeholder="Lời nhắn (nếu có)"></textarea>
+          <textarea name="note" rows="4" placeholder="Chúc phúc cho chúng mình "></textarea>
           <button style={{background:'var(--main-1)', color:'var(--main-2)', padding:'12px 18px', borderRadius:8}}>Gửi</button>
         </form>
 
