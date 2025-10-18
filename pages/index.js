@@ -9,9 +9,8 @@ import MusicEmbed from "@/components/MusicEmbed";
 export default function Home(){
   return (
     <div>
-      <MusicControl />
       <Hero />
-    <MusicEmbed />
+      <MusicEmbed />
       <Story />
       <Timeline />
       <Venue />
