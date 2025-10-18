@@ -1,5 +1,5 @@
 const events = [
-  { time: '12/2022', desc: 'Quen nhau 💫' },
+  { time: '05/2023', desc: 'Quen nhau 💫' },
   { time: '08/2023', desc: 'Yêu nhau 💕' },
   { time: '10/2023', desc: 'Yêu xa ✈️' },
   { time: '09/2025', desc: 'Yêu gần lại 🏡' },
