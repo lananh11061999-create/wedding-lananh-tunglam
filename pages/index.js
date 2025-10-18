@@ -4,7 +4,8 @@ import Timeline from '../components/Timeline'
 import Venue from '../components/Venue'
 import Gallery from '../components/Gallery'
 import RSVP from '../components/RSVP'
-import MusicEmbed from "@/components/MusicEmbed";
+import MusicEmbed from "../components/MusicEmbed";
+
 
 export default function Home(){
   return (
