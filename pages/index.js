@@ -4,8 +4,13 @@ import Timeline from '../components/Timeline'
 import Venue from '../components/Venue'
 import Gallery from '../components/Gallery'
 import RSVP from '../components/RSVP'
+<<<<<<< HEAD
 import MusicEmbed from "../components/MusicEmbed";
 
+=======
+import MusicControl from '../components/MusicControl'
+import MusicEmbed from "@/components/MusicEmbed";
+>>>>>>> 9231bc7 (Update music component: replace MusicControl with MusicEmbed)
 
 export default function Home(){
   return (

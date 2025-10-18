@@ -1,0 +1,16 @@
+export default function MusicEmbed() {
+  return (
+    <div className="flex justify-center mt-8">
+      <iframe
+        scrolling="no"
+        width="100%"
+        height="180"
+        src="https://zingmp3.vn/embed/song/ZZ90EA6F?start=true"
+        frameBorder="0"
+        allowFullScreen
+        title="Em Đồng Ý - Đức Phúc"
+        className="rounded-2xl shadow-md"
+      ></iframe>
+    </div>
+  );
+}
