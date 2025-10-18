@@ -1,31 +1,84 @@
+import { useEffect, useRef, useState } from "react";
+
 export default function MusicEmbed() {
+  const audioRef = useRef(null);
+  const [isPlaying, setIsPlaying] = useState(false);
+
+  const handlePlay = () => {
+    if (audioRef.current) {
+      if (isPlaying) {
+        audioRef.current.pause();
+      } else {
+        audioRef.current.play();
+      }
+      setIsPlaying(!isPlaying);
+    }
+  };
+
+  // 🎵 Hiệu ứng nốt nhạc bay
+  useEffect(() => {
+    if (!isPlaying) return;
+    const interval = setInterval(() => {
+      const note = document.createElement("div");
+      note.innerText = "🎵";
+      note.style.position = "fixed";
+      note.style.left = Math.random() * window.innerWidth + "px";
+      note.style.bottom = "0px";
+      note.style.fontSize = "20px";
+      note.style.opacity = "0.9";
+      note.style.transition = "all 4s ease-out";
+      note.style.zIndex = "9999";
+      document.body.appendChild(note);
+      setTimeout(() => {
+        note.style.transform = `translateY(-120vh)`;
+        note.style.opacity = "0";
+      }, 100);
+      setTimeout(() => note.remove(), 4000);
+    }, 700);
+    return () => clearInterval(interval);
+  }, [isPlaying]);
+
   return (
     <div
       style={{
         textAlign: "center",
         margin: "40px auto",
-        padding: "16px",
-        background: "#f9f5f2", // pastel be nhẹ
+        padding: "20px",
+        background: "#f9f5f2",
         borderRadius: "16px",
         boxShadow: "0 2px 10px rgba(0,0,0,0.05)",
         width: "fit-content",
       }}
     >
-      <p style={{ fontSize: 15, color: "#7a6060", marginBottom: 8 }}>
+      <p style={{ fontSize: 15, color: "#7a6060", marginBottom: 10 }}>
         💕 Giai điệu tình yêu của Lan Anh & Tùng Lâm 💕
       </p>
-      <iframe
-        scrolling="no"
-        width="640"
-        height="180"
-        src="https://zingmp3.vn/embed/song/ZZ90EA6F?start=false"
-        frameBorder="0"
-        allowFullScreen={true}
+
+      <button
+        onClick={handlePlay}
         style={{
+          background: isPlaying ? "#b85c5c" : "#d8b6a4",
+          color: "white",
           border: "none",
-          borderRadius: "12px",
-          overflow: "hidden",
+          borderRadius: "30px",
+          padding: "10px 24px",
+          cursor: "pointer",
+          fontSize: "16px",
+          transition: "0.3s",
         }}
+      >
+        {isPlaying ? "⏸️ Dừng nhạc" : "▶️ Phát nhạc"}
+      </button>
+
+      {/* Bật nhạc từ ZingMP3 thông qua player mini */}
+      <iframe
+        title="ZingMP3 Player"
+        scrolling="no"
+        width="300"
+        height="92"
+        style={{ border: "none", marginTop: 12, borderRadius: 12 }}
+        src="https://zingmp3.vn/embed/song/ZZ90EA6F?autoplay=false"
+        allow="autoplay"
       />
     </div>
   );
