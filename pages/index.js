@@ -4,13 +4,14 @@ import Timeline from '../components/Timeline'
 import Venue from '../components/Venue'
 import Gallery from '../components/Gallery'
 import RSVP from '../components/RSVP'
-import MusicControl from '../components/MusicControl'
+import MusicEmbed from "@/components/MusicEmbed";
 
 export default function Home(){
   return (
     <div>
       <MusicControl />
       <Hero />
+    <MusicEmbed />
       <Story />
       <Timeline />
       <Venue />
