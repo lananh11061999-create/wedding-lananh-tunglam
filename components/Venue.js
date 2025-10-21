@@ -125,7 +125,7 @@ export default function Venue() {
               margin: "-20px -20px 20px -20px",
             }}
           >
-            10.2025
+            12.2025
           </div>
 
           {/* Days of week */}
@@ -161,15 +161,15 @@ export default function Venue() {
               gap: "8px",
             }}
           >
-            {/* Empty cells for days before Oct 1 */}
-            {Array.from({ length: 1 }, (_, i) => (
+            {/* Empty cells for days before Dec 1 */}
+            {Array.from({ length: 6 }, (_, i) => (
               <div key={`empty-${i}`} style={{ height: "40px" }}></div>
             ))}
             
-            {/* October days */}
+            {/* December days */}
             {Array.from({ length: 31 }, (_, i) => {
               const day = i + 1;
-              const isSpecialDay = day === 26; // Highlight day 26
+              const isSpecialDay = day === 28; // Highlight day 28
               
               return (
                 <div
