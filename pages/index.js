@@ -3,13 +3,11 @@ import Story from '../components/Story'
 import Venue from '../components/Venue'
 import Gallery from '../components/Gallery'
 import RSVP from '../components/RSVP'
-import MusicEmbed from '../components/MusicEmbed';
 
 export default function Home(){
   return (
     <div>
       <Hero />
-      <MusicEmbed />
       <Story />
       <Venue />
       <Gallery />
