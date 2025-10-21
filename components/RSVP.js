@@ -12,45 +12,6 @@ export default function RSVP(){
         textAlign: 'center',
         position: 'relative'
       }}>
-        {/* Decorative borders */}
-        <div style={{
-          position: 'absolute',
-          left: '-20px',
-          top: '0',
-          width: '8px',
-          height: '100%',
-          background: '#8B0000',
-          borderRadius: '4px 0 0 4px'
-        }}></div>
-        <div style={{
-          position: 'absolute',
-          right: '-20px',
-          top: '0',
-          width: '8px',
-          height: '100%',
-          background: '#8B0000',
-          borderRadius: '0 4px 4px 0'
-        }}></div>
-
-        {/* Decorative corners */}
-        <div style={{
-          position: 'absolute',
-          top: '-10px',
-          left: '-10px',
-          width: '20px',
-          height: '20px',
-          background: '#8B0000',
-          borderRadius: '50% 0 50% 0'
-        }}></div>
-        <div style={{
-          position: 'absolute',
-          top: '-10px',
-          right: '-10px',
-          width: '20px',
-          height: '20px',
-          background: '#8B0000',
-          borderRadius: '0 50% 0 50%'
-        }}></div>
 
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -70,10 +31,11 @@ export default function RSVP(){
 
           {/* Double Happiness Symbol */}
           <div style={{
-            fontSize: '4rem',
+            fontSize: '5rem',
             color: '#8B0000',
             marginBottom: '40px',
-            textShadow: '2px 2px 4px rgba(0,0,0,0.1)'
+            textShadow: '2px 2px 4px rgba(0,0,0,0.1)',
+            fontWeight: 'bold'
           }}>
             囍
           </div>
@@ -186,14 +148,14 @@ export default function RSVP(){
                   </span>
                 </label>
               </div>
-            </div>
+        </div>
 
             {/* Submit Button */}
             <button 
               type="submit"
               style={{
                 width: '100%',
-                background: '#8B0000',
+                background: '#D2B48C',
                 color: 'white',
                 padding: '15px 30px',
                 borderRadius: '10px',
@@ -202,17 +164,17 @@ export default function RSVP(){
                 fontWeight: '600',
                 cursor: 'pointer',
                 transition: 'all 0.3s ease',
-                boxShadow: '0 4px 15px rgba(139, 0, 0, 0.3)'
+                boxShadow: '0 4px 15px rgba(210, 180, 140, 0.3)'
               }}
               onMouseOver={(e) => {
-                e.target.style.background = '#A00000';
+                e.target.style.background = '#C4A484';
                 e.target.style.transform = 'translateY(-2px)';
-                e.target.style.boxShadow = '0 6px 20px rgba(139, 0, 0, 0.4)';
+                e.target.style.boxShadow = '0 6px 20px rgba(210, 180, 140, 0.4)';
               }}
               onMouseOut={(e) => {
-                e.target.style.background = '#8B0000';
+                e.target.style.background = '#D2B48C';
                 e.target.style.transform = 'translateY(0)';
-                e.target.style.boxShadow = '0 4px 15px rgba(139, 0, 0, 0.3)';
+                e.target.style.boxShadow = '0 4px 15px rgba(210, 180, 140, 0.3)';
               }}
             >
               Gửi xác nhận
