@@ -1,6 +1,5 @@
 import Hero from '../components/Hero'
 import Story from '../components/Story'
-import Timeline from '../components/Timeline'
 import Venue from '../components/Venue'
 import Gallery from '../components/Gallery'
 import RSVP from '../components/RSVP'
@@ -12,7 +11,6 @@ export default function Home(){
       <Hero />
       <MusicEmbed />
       <Story />
-      <Timeline />
       <Venue />
       <Gallery />
       <RSVP />

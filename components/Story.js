@@ -29,16 +29,14 @@ export default function Story(){
         </motion.div>
 
         <div style={{
-          display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
-          gap: '40px',
-          maxWidth: '1200px',
-          margin: '0 auto'
+          maxWidth: '800px',
+          margin: '0 auto',
+          position: 'relative'
         }}>
           {/* Timeline Item 1 */}
           <motion.div
-            initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
             style={{
               background: 'white',
@@ -46,7 +44,8 @@ export default function Story(){
               borderRadius: '20px',
               boxShadow: '0 10px 30px rgba(0,0,0,0.1)',
               position: 'relative',
-              overflow: 'hidden'
+              overflow: 'hidden',
+              marginBottom: '30px'
             }}
           >
             <div style={{
@@ -68,7 +67,7 @@ export default function Story(){
               fontWeight: '600',
               marginBottom: '15px',
               textAlign: 'center'
-            }}>Gặp gỡ</h3>
+            }}>Gặp gỡ - 5/2023</h3>
             <p style={{
               color: '#666',
               lineHeight: '1.6',
@@ -78,6 +77,14 @@ export default function Story(){
               Từ cái nhìn đầu tiên, cả hai đều biết rằng đây chính là người mình đang tìm kiếm.
             </p>
           </motion.div>
+
+          {/* Arrow */}
+          <div style={{
+            textAlign: 'center',
+            margin: '20px 0',
+            fontSize: '2rem',
+            color: '#8B0000'
+          }}>⬇️</div>
 
           {/* Timeline Item 2 */}
           <motion.div
@@ -90,7 +97,8 @@ export default function Story(){
               borderRadius: '20px',
               boxShadow: '0 10px 30px rgba(0,0,0,0.1)',
               position: 'relative',
-              overflow: 'hidden'
+              overflow: 'hidden',
+              marginBottom: '30px'
             }}
           >
             <div style={{
@@ -112,7 +120,7 @@ export default function Story(){
               fontWeight: '600',
               marginBottom: '15px',
               textAlign: 'center'
-            }}>Yêu nhau</h3>
+            }}>Yêu nhau - 8/2023</h3>
             <p style={{
               color: '#666',
               lineHeight: '1.6',
@@ -123,10 +131,18 @@ export default function Story(){
             </p>
           </motion.div>
 
+          {/* Arrow */}
+          <div style={{
+            textAlign: 'center',
+            margin: '20px 0',
+            fontSize: '2rem',
+            color: '#8B0000'
+          }}>⬇️</div>
+
           {/* Timeline Item 3 */}
           <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
             style={{
               background: 'white',
@@ -134,7 +150,8 @@ export default function Story(){
               borderRadius: '20px',
               boxShadow: '0 10px 30px rgba(0,0,0,0.1)',
               position: 'relative',
-              overflow: 'hidden'
+              overflow: 'hidden',
+              marginBottom: '30px'
             }}
           >
             <div style={{
@@ -156,7 +173,7 @@ export default function Story(){
               fontWeight: '600',
               marginBottom: '15px',
               textAlign: 'center'
-            }}>Yêu xa</h3>
+            }}>Yêu xa - 10/2023</h3>
             <p style={{
               color: '#666',
               lineHeight: '1.6',
@@ -167,10 +184,18 @@ export default function Story(){
             </p>
           </motion.div>
 
+          {/* Arrow */}
+          <div style={{
+            textAlign: 'center',
+            margin: '20px 0',
+            fontSize: '2rem',
+            color: '#8B0000'
+          }}>⬇️</div>
+
           {/* Timeline Item 4 */}
           <motion.div
-            initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.8 }}
             style={{
               background: 'white',
@@ -178,7 +203,8 @@ export default function Story(){
               borderRadius: '20px',
               boxShadow: '0 10px 30px rgba(0,0,0,0.1)',
               position: 'relative',
-              overflow: 'hidden'
+              overflow: 'hidden',
+              marginBottom: '30px'
             }}
           >
             <div style={{
@@ -193,14 +219,14 @@ export default function Story(){
               fontSize: '3rem',
               marginBottom: '20px',
               textAlign: 'center'
-            }}>🏡</div>
+            }}>🏠</div>
             <h3 style={{
               color: '#8B0000',
               fontSize: '1.5rem',
               fontWeight: '600',
               marginBottom: '15px',
               textAlign: 'center'
-            }}>Về chung nhà</h3>
+            }}>Kết thúc yêu xa - 9/2025</h3>
             <p style={{
               color: '#666',
               lineHeight: '1.6',
@@ -210,6 +236,14 @@ export default function Story(){
               Cuộc sống cùng nhau đã mang lại những niềm vui và hạnh phúc mới.
             </p>
           </motion.div>
+
+          {/* Arrow */}
+          <div style={{
+            textAlign: 'center',
+            margin: '20px 0',
+            fontSize: '2rem',
+            color: '#8B0000'
+          }}>⬇️</div>
 
           {/* Timeline Item 5 */}
           <motion.div
@@ -222,10 +256,7 @@ export default function Story(){
               borderRadius: '20px',
               boxShadow: '0 10px 30px rgba(0,0,0,0.1)',
               position: 'relative',
-              overflow: 'hidden',
-              gridColumn: 'span 2',
-              maxWidth: '600px',
-              margin: '0 auto'
+              overflow: 'hidden'
             }}
           >
             <div style={{
@@ -247,7 +278,7 @@ export default function Story(){
               fontWeight: '600',
               marginBottom: '15px',
               textAlign: 'center'
-            }}>Đám cưới</h3>
+            }}>Đám cưới - 12/2025</h3>
             <p style={{
               color: '#666',
               lineHeight: '1.6',
