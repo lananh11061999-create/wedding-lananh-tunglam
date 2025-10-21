@@ -104,37 +104,130 @@ export default function Venue() {
       >
         <div
           style={{
-            width: "260px",
-            height: "260px",
+            width: "320px",
             background: "white",
-            borderRadius: "50%",
-            boxShadow: "0 0 20px rgba(0,0,0,0.05)",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            flexDirection: "column",
+            borderRadius: "20px",
+            boxShadow: "0 0 20px rgba(0,0,0,0.1)",
+            padding: "20px",
+            fontFamily: "'Inter', sans-serif",
           }}
         >
-          <h3
+          {/* Calendar Header */}
+          <div
             style={{
-              color: "#b85c5c",
-              fontSize: "20px",
-              marginBottom: "5px",
+              background: "#8B0000",
+              color: "white",
+              padding: "15px",
+              borderRadius: "15px 15px 0 0",
+              textAlign: "center",
+              fontSize: "18px",
+              fontWeight: "600",
+              margin: "-20px -20px 20px -20px",
             }}
           >
-            ❤️ Ngày trọng đại
-          </h3>
-          <h1
+            10.2025
+          </div>
+
+          {/* Days of week */}
+          <div
             style={{
-              color: "#b85c5c",
-              fontSize: "58px",
-              margin: "10px 0",
-              fontFamily: "'Playfair Display', serif",
+              display: "grid",
+              gridTemplateColumns: "repeat(7, 1fr)",
+              gap: "8px",
+              marginBottom: "10px",
             }}
           >
-            28
-          </h1>
-          <p style={{ color: "#7a6060" }}>Tháng 12 / 2025</p>
+            {["MON", "TUE", "WED", "THU", "FRI", "SAT", "SUN"].map((day) => (
+              <div
+                key={day}
+                style={{
+                  textAlign: "center",
+                  fontSize: "12px",
+                  fontWeight: "600",
+                  color: "#666",
+                  padding: "5px",
+                }}
+              >
+                {day}
+              </div>
+            ))}
+          </div>
+
+          {/* Calendar Grid */}
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "repeat(7, 1fr)",
+              gap: "8px",
+            }}
+          >
+            {/* Empty cells for days before Oct 1 */}
+            {Array.from({ length: 1 }, (_, i) => (
+              <div key={`empty-${i}`} style={{ height: "40px" }}></div>
+            ))}
+            
+            {/* October days */}
+            {Array.from({ length: 31 }, (_, i) => {
+              const day = i + 1;
+              const isSpecialDay = day === 26; // Highlight day 26
+              
+              return (
+                <div
+                  key={day}
+                  style={{
+                    height: "40px",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    fontSize: "14px",
+                    fontWeight: isSpecialDay ? "600" : "400",
+                    color: isSpecialDay ? "#8B0000" : "#333",
+                    position: "relative",
+                    borderRadius: "8px",
+                    background: isSpecialDay ? "rgba(139, 0, 0, 0.1)" : "transparent",
+                  }}
+                >
+                  {day}
+                  {isSpecialDay && (
+                    <div
+                      style={{
+                        position: "absolute",
+                        top: "-8px",
+                        right: "-8px",
+                        width: "16px",
+                        height: "16px",
+                        background: "#FF6B6B",
+                        borderRadius: "50%",
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        fontSize: "10px",
+                      }}
+                    >
+                      ❤️
+                    </div>
+                  )}
+                </div>
+              );
+            })}
+          </div>
+
+          {/* Watermark */}
+          <div
+            style={{
+              position: "absolute",
+              top: "50%",
+              left: "50%",
+              transform: "translate(-50%, -50%)",
+              fontSize: "80px",
+              fontWeight: "900",
+              color: "rgba(0,0,0,0.05)",
+              pointerEvents: "none",
+              zIndex: 0,
+            }}
+          >
+            2025
+          </div>
         </div>
       </motion.div>
     </section>
