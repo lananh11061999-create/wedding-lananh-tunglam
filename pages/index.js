@@ -13,7 +13,7 @@ export default function Home(){
       <Gallery />
       <RSVP />
             <p style={{maxWidth:800, margin:'18px auto 0 auto', textAlign:'center', color:'#5a4040'}}>
-         Chúng mình sẽ hạnh phúc hơn khi  dành thời gian đến chứng kiến khoảnh khắc tụi mình chính thức về chung một nhà.
+         Chúng mình sẽ hạnh phúc hơn khi được mọi người dành thời gian đến chứng kiến khoảnh khắc tụi mình chính thức về chung một nhà.
         </p>
       <footer>© Lan Anh & Tùng Lâm — 28/12/2025</footer>
     </div>

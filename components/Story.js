@@ -17,7 +17,7 @@ export default function Story(){
             marginBottom: '20px',
             fontFamily: "'Playfair Display', serif"
           }}>
-            Câu chuyện tình yêu
+            Love Story
           </h2>
           <div style={{
             width: '80px',
@@ -73,7 +73,7 @@ export default function Story(){
               lineHeight: '1.6',
               textAlign: 'center'
             }}>
-              Tháng 5/2023, chúng mình gặp nhau trong một buổi hẹn hò định mệnh. 
+              Chúng mình gặp nhau trong một buổi hẹn hò định mệnh. 
               Từ cái nhìn đầu tiên, cả hai đều biết rằng đây chính là người mình đang tìm kiếm.
             </p>
           </motion.div>
@@ -126,7 +126,7 @@ export default function Story(){
               lineHeight: '1.6',
               textAlign: 'center'
             }}>
-              Tháng 8/2023, chúng mình chính thức bắt đầu hành trình yêu đương. 
+              Chúng mình chính thức bắt đầu hành trình yêu đương. 
               Những ngày đầu ngọt ngào và đầy hạnh phúc đã đánh dấu khởi đầu của tình yêu.
             </p>
           </motion.div>
@@ -179,7 +179,7 @@ export default function Story(){
               lineHeight: '1.6',
               textAlign: 'center'
             }}>
-              Tháng 10/2023, chúng mình phải đối mặt với thử thách yêu xa. 
+              Chúng mình phải đối mặt với thử thách yêu xa. 
               Những cuộc gọi video, tin nhắn và những chuyến bay đã giúp chúng mình vượt qua khoảng cách.
             </p>
           </motion.div>
@@ -232,8 +232,8 @@ export default function Story(){
               lineHeight: '1.6',
               textAlign: 'center'
             }}>
-              Tháng 9/2025, chúng mình quyết định về chung một nhà. 
-              Cuộc sống cùng nhau đã mang lại những niềm vui và hạnh phúc mới.
+              Chúng mình kết thúc hành trình yêu xa đầy khó khăn và thử thách,
+              Yêu gần giúp chúng mình cảm nhận được tình yêu rõ rệt hơn.
             </p>
           </motion.div>
 
@@ -285,7 +285,7 @@ export default function Story(){
               textAlign: 'center',
               fontSize: '1.1rem'
             }}>
-              Tháng 12/2025, chúng mình sẽ chính thức trở thành vợ chồng. 
+              Chúng mình sẽ chính thức trở thành vợ chồng. 
               Đây là ngày đặc biệt nhất trong cuộc đời, khi tình yêu được kết trái bằng một đám cưới trọn vẹn. 
               Chúng mình hạnh phúc mời bạn cùng chung vui trong ngày trọng đại này.
             </p>
